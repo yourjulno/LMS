@@ -15,7 +15,7 @@ heights = [40, 60, 80, 100, 120]
 adc = [np.mean(data20), np.mean(data40), np.mean(data60), np.mean(data80), np.mean(data100), np.mean(data120)]
 
 plt.plot(adc, heights)
-plt.title('Калибровочный график')
+plt.title('РљР°Р»РёР±СЂРѕРІРѕС‡РЅС‹Р№ РіСЂР°С„РёРє')
 plt.ylabel(u'h, mm')
 plt.xlabel(u'adc')
 plt.minorticks_on()
@@ -32,9 +32,9 @@ waveData, duration, count = wave.readWaveData(path + 'wave.txt')
 t = np.linspace(0, duration, count)
 
 plt.plot(t, np.polyval(p, waveData))
-plt.title('Зависимость уровня воды от времени')
+plt.title('Р—Р°РІРёСЃРёРјРѕСЃС‚СЊ СѓСЂРѕРІРЅСЏ РІРѕРґС‹ РѕС‚ РІСЂРµРјРµРЅРё')
 plt.ylabel(u'h, mm')
-plt.xlabel(u't, с')
+plt.xlabel(u't, СЃ')
 plt.minorticks_on()
 plt.grid(which = "major", linewidth = 1)
 plt.grid(which = "minor", linestyle = '--', linewidth = 0.5)
