@@ -11,7 +11,7 @@ data80, duration, count = wave.readWaveData(path + '80 mm.txt')
 data100, duration, count = wave.readWaveData(path + '100 mm.txt')
 data120, duration, count = wave.readWaveData(path + '120 mm.txt')
 
-heights = [40, 60, 80, 100, 120]
+heights = [20, 40, 60, 80, 100, 120]
 adc = [np.mean(data20), np.mean(data40), np.mean(data60), np.mean(data80), np.mean(data100), np.mean(data120)]
 
 plt.plot(adc, heights)
